@@ -1,78 +1,60 @@
-      /* 
-      'button' = CSS Selector 
-      'backroundground-color = CSS Property'
-      'red' = CSS Value
-      */
-      .subscribe-button {
-    /* red, blue, green: max 255 */
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-      /* px = pixels */
-      height: 36px;
-      width: 105px;
-      border-radius: 2;
-      cursor: pointer;
-      /* Space is MARGIN */
-      margin-right: 8px;
-      /* 2 value: what transition, How long*/
-      transition: opacity 0.15s;
-    }
+.subscribe-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.15s;
+}
+
+.subscribe-button:hover {
+  opacity: 0.8;
+}
   
-    /* 
-      styel only happen when hover 
-      Aka Pseduo class
-    */
-    .subscribe-button:hover {
-      /* Opacity element: 0-1 (1-Normal) */
-      opacity: 0.8;
-    }
+.subscribe-button:active {
+  opacity: .5;
+}
   
-    .subscribe-button:active {
-      opacity: .5;
-    }
+.join-button {
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211);
+  height: 36px;
+  width: 62px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .15s, color .15s;
+}
   
-    .join-button {
-      background-color: white;
-      border-color: rgb(41, 118, 211);
-      border-style: solid;
-      border-width: 1px;
-      color: rgb(41, 118, 211);
-      height: 36px;
-      width: 62px;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: background-color .15s,
-                  color .15s;
-    }
+.join-button:hover {
+  background-color:  rgb(41, 118, 211);
+  color: white ;
+}
   
-    .join-button:hover {
-      background-color:  rgb(41, 118, 211);
-      color: white ;
-    }
+.join-button:active {
+  opacity: .7;
+}
   
-    .join-button:active {
-      opacity: .7;
-    }
+.tweet-button {
+  background-color: rgb(0, 157, 255);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  height: 36px;
+  width: 74px;
+  height: 35px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow .15s;
+}
   
-    .tweet-button {
-      background-color: rgb(0, 157, 255);
-      color: white;
-      border-radius: 15px;
-      border: none;
-      height: 36px;
-      width: 74px;
-      height: 35px;
-      font-weight: bold;
-      font-size: 15px;
-      cursor: pointer;
-      margin-left: 8px;
-      transition: box-shadow .15s;
-    }
-  
-    .tweet-button:hover {
-      /* Adding Shadow; 4 values
-        Horizontal, Vertical, Blur, Color */
-      /* rgba: Same as RGB, but with Opacity */
-      box-shadow: 5px 5px 10px rgba(0,0,0,.15);
-    }
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0,0,0,.15);
+}
